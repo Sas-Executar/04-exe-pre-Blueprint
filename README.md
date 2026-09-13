@@ -1,7 +1,7 @@
-# sas-executar-blueprints · transição em revisão
+# 04-exe-pre-Blueprint · transição em revisão
 
 ## 1. Propósito
-ESPECIFICAR: produto, requisitos, AC, domínio, arquitetura, contratos e development packets. Nome atual: `Executar-app-Blueprint`. O nome alvo ainda não foi aplicado.
+ESPECIFICAR: produto, requisitos, AC, domínio, arquitetura, contratos e development packets. Este é o repositório final de Blueprint/pré-produção do ecossistema EXECUTAR.
 
 ## 2. Não é
 Runtime, deploy e autoridade de governança documental pertencem aos repositórios correspondentes.
@@ -12,10 +12,10 @@ Runtime, deploy e autoridade de governança documental pertencem aos repositóri
 ## 4. Relação entre repositórios
 Governance → Blueprints → Ecosystem. Maestro atua transversalmente.
 
-- [Maestro](https://github.com/Sas-Executar/Maestr-Docs): OPERAR.
-- [Blueprints](https://github.com/Sas-Executar/Executar-app-Blueprint): ESPECIFICAR.
-- [Governance](https://github.com/Sas-Executar/Programa-Sas): GOVERNAR.
-- [Ecosystem](https://github.com/Sas-Executar/next-forge): IMPLEMENTAR + RELEASE.
+- [Maestro](https://github.com/Sas-Executar/02-Exe-Maestro): OPERAR.
+- [Blueprints](https://github.com/Sas-Executar/04-exe-pre-Blueprint): ESPECIFICAR.
+- [Governance](https://github.com/Sas-Executar/03-Exe-Governance): GOVERNAR.
+- [Ecosystem](https://github.com/Sas-Executar/01-Executar-Echo): IMPLEMENTAR + RELEASE.
 
 ## 5. Estrutura
 - `00-governance/`
@@ -44,12 +44,12 @@ Entrada → inventário → trabalho em branch → validação → PR → decis�
 `draft ≠ review ≠ approved ≠ implemented ≠ tested ≠ verified ≠ released`. Preservar também pre_approved, accepted e demais estados encontrados. `registered`, `registered_reference`, `registered_from_source` e `registered_analysis` não significam implementação. A classificação de proveniência não altera a classificação das afirmações da fonte.
 
 ## 8. Contribuição
-Usar migration/*, blueprint/*, wf/*, integration/*, fix/* ou release/*. Branch representa trabalho. main é o estado-alvo canônico após aprovação e integração explícitas. Se main não existir, a branch default observada não comprova aprovação. Não reescrever histórico ou remover fontes durante a migração.
+Usar migration/*, blueprint/*, wf/*, integration/*, fix/* ou release/*. Branch representa trabalho. `main` é o estado-alvo canônico após aprovação e integração explícitas. Não reescrever histórico ou remover fontes durante a migração.
 
 ## 9. Traceability
 Origem repo/branch/SHA/path → ID → requisito → AC → target → teste/evidência → release. Campos desconhecidos: GAP; owner desconhecido fica vazio. PROPOSED não é requisito existente.
 
 ## 10. Migration status
-PASS_WITH_GAPS: estrutura em revisão, fontes preservadas. Renomeação, absorções, redistribuição e archive pendentes. A cópia documental do Maestro está nos PRs 2–4 do Programa-Sas; verificação de bytes não é aprovação documental.
+PASS_WITH_GAPS: estrutura em revisão, fontes preservadas. Os quatro repositórios finais já estão nomeados como `01-Executar-Echo`, `02-Exe-Maestro`, `03-Exe-Governance` e `04-exe-pre-Blueprint`; absorções, redistribuição, canonicalização e archive dos legados continuam pendentes. A cópia documental do Maestro está nos PRs 2–4 de `03-Exe-Governance`; verificação de bytes não é aprovação documental.
 
-[README anterior](00-governance/README_BEFORE_MIGRATION.md) preservado como snapshot de referência com caminhos relativos do contexto original.
+[README anterior](00-governance/README_BEFORE_MIGRATION.md) preservado como snapshot histórico de referência com os nomes e caminhos do contexto original.
