@@ -1,6 +1,6 @@
 # Design reconciliation · preliminary
 
-Source snapshot: Desyng-System-ecossitema. at 3784189e789a5b16fc2bdaaa6854a4bdc1bcad77. Ecosystem snapshot: next-forge at f189de79ceef7c1ef69f61f12e272f99b4cdb699.
+Source snapshot: `Desyng-System-ecossitema.` at `3784189e789a5b16fc2bdaaa6854a4bdc1bcad77`. Ecosystem snapshot: `01-Executar-Echo` at `f189de79ceef7c1ef69f61f12e272f99b4cdb699` (o repositório ainda se chamava `next-forge` quando esse snapshot foi produzido).
 
 Only tree/path/blob comparisons are asserted. Presence is not implementation verification. Source authority currently follows the existing UI-005 contract and reference registry; no second SOT is created.
 
